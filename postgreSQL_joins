@@ -1,0 +1,45 @@
+#PostgreSQL Joins
+
+## 1. INNER JOIN
+If values in table A is equal to table in B then inner join creates a new row that contain columns from both table and this new to the result set. 
+
+![Inner Join - venn diagram](https://www.postgresqltutorial.com/wp-content/uploads/2018/12/PostgreSQL-Join-Inner-Join.png)
+
+## 2. LEFT JOIN
+The left join starts selecting data from the left table. It compares values in the fruit_a column with the values in the fruit_b column in the basket_b table.
+
+If these values are equal, the left join creates a new row that contains columns of both tables and adds this new row to the result set. (see the row #1 and #2 in the result set).
+
+In case the values do not equal, the left join also creates a new row that contains columns from both tables and adds it to the result set. However, it fills the columns of the right table (basket_b) with null.
+
+![Left Join - venn diagram](https://www.postgresqltutorial.com/wp-content/uploads/2018/12/PostgreSQL-Join-Left-Join.png)
+
+### NOTE: Left outer join is same as Left join, the left join that returns rows from the left table that do not have matching rows from the right table.
+
+![Left Outer Join - venn diagram] (https://www.postgresqltutorial.com/wp-content/uploads/2018/12/PostgreSQL-Join-Left-Join-with-Where.png)
+
+## 3. RIGHT JOIN
+The right join is a reversed version of the left join. The right join starts selecting data from the right table. It compares each value in the fruit_b column of every row in the right table with each value in the fruit_a column of every row in the fruit_a table.
+
+If these values are equal, the right join creates a new row that contains columns from both tables.
+
+In case these values are not equal, the right join also creates a new row that contains columns from both tables. However, it fills the columns in the left table with NULL.
+
+![Right Join - venn diagram](https://www.postgresqltutorial.com/wp-content/uploads/2018/12/PostgreSQL-Join-Right-Join.png)
+
+### NOTE: the right join returns rows from the right table that do not have matching rows in the left table, Right Join is same as Right outer join
+
+![right outer join - venn diagram](https://www.postgresqltutorial.com/wp-content/uploads/2018/12/PostgreSQL-Join-Right-Join-with-Where.png)
+
+## 4. FULL OUTER JOIN
+The full outer join or full join returns a result set that contains all rows from both left and right tables, with the matching rows from both sides if available. In case there is no match, the columns of the table will be filled with NULL.
+
+![Full outer join - venn diagram](https://www.postgresqltutorial.com/wp-content/uploads/2018/12/PostgreSQL-Join-Full-Outer-Join.png)
+
+the full outer join that returns rows from a table that do not have the corresponding rows in the other table:
+
+![full outer join - venn diagram](https://www.postgresqltutorial.com/wp-content/uploads/2018/12/PostgreSQL-Join-Full-Outer-Join-with-Where.png)
+
+# Summary of Joins
+
+![PostgreSQL joins](https://www.postgresqltutorial.com/wp-content/uploads/2018/12/PostgreSQL-Joins.png)
