@@ -38,7 +38,7 @@ The full outer join or full join returns a result set that contains all rows fro
 
 the full outer join that returns rows from a table that do not have the corresponding rows in the other table:
 
-![full outer join - venn diagram](https://www.postgresqltutorial.com/wp-content/uploads/2018/12/PostgreSQL-Join-Full-Outer-Join-with-Where.png)
+![full outer join - venn diagram](https://raw.githubusercontent.com/OGKlausMikaelson/postgres_notes/main/PostgreSQL-Join-Full-Outer-Join-with-Where.png)
 
 # Summary of Joins
 
